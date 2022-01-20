@@ -7,13 +7,15 @@
     <title>Produtos</title>
 </head>
 <body>
-
+        <center>
         <h1>Todos os Produtos</h1>
+        </center>
+        
 
         @foreach ($products as $prod)
             <h2> {{$prod->name}} </h2>
-            <p> {{ $prod->description }} </p>
-            <p> {{ $prod->price }} </p>
+            <h4><p> {{ $prod->description }} </p></h4>
+            <p> R$ {{ $prod->price }} ,00</p>
             <hr>
         @endforeach
 
